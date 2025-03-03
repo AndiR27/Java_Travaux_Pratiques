@@ -1,0 +1,83 @@
+### Ignorer les fichiers compilés ###
+*.class
+*.jar
+*.war
+*.ear
+*.exe
+*.dll
+*.so
+*.dylib
+
+### Ignorer les logs et fichiers temporaires ###
+*.log
+*.tmp
+hs_err_pid*
+
+### Ignorer les fichiers système ###
+.DS_Store
+Thumbs.db
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/shelf/
+.idea/assetWizardSettings.xml
+.idea/dictionaries/
+.idea/libraries/
+.idea/vcs.xml
+
+### Eclipse ###
+.classpath
+.project
+.settings/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/cache/
+.gradle/taskHistory/
+.gradle/gradle.log
+
+### Ignorer les fichiers de dépendances ###
+*.dependency-reduced-pom.xml
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+### Ignorer les fichiers des outils de test ###
+test-output/
+surefire-reports/
+jacoco.exec
+.coverage/
+
+### Ignorer les fichiers des conteneurs ###
+.dockerignore
+docker-compose.yml
+docker-compose.override.yml
+
+### Ignorer les fichiers spécifiques à l’OS ###
+*.swp
+*.swo
+*~
