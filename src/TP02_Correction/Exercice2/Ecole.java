@@ -54,6 +54,18 @@ public class Ecole
         
     }
 
+    public String getNom() {
+        return nom;
+    }
+
+    public String getType(){
+        return type;
+    }
+
+    public String getDegree() {
+        return degre;
+    }
+
     public void setNbBatiments (int nb){
         this.nbBatiment = nb;
     }
@@ -83,8 +95,11 @@ public class Ecole
 
     public void setDegre (String degre){
         this.degre = degre;
-        if (type == "Publique" && (degre == "Primaire" || degre == "C.O.")){
+        if (Objects.equals(type, "Publique") && (Objects.equals(degre, "Primaire") || Objects.equals(degre, "C.O."))){
             this.domaine = "Général";
         }
     }
+
+
+
 }

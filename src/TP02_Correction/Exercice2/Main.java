@@ -22,6 +22,20 @@ public class Main {
         System.out.println("\nTest des égalités entre écoles\n----------------------");
         comparerEcole(e3,e4);
         comparerEcole(e5,e6);
+
+        //Creation de quelques personnes pour tester la deuxième partie de l'exercice
+        Personne p1 = new Personne("Dupont", "Paul", 24, e1);
+        Personne p2 = new Personne("Grosjean", "Felix", 37, e2);
+
+        System.out.println("\n Test des affichages du nom et de l'instance de l'école\n----------------------");
+        System.out.println(p1.afficherNomEcole());
+        System.out.println(p2.afficherEcole());
+
+        System.out.println("\n Test des affichages d'une personne\n----------------------");
+        System.out.println(p1);
+
+        System.out.println(p2);
+
     }
 
     public static void comparerEcole(Ecole e1, Ecole e2){
@@ -31,5 +45,9 @@ public class Main {
             System.out.println(e1 + "\n--------- est égal à ---------\n" + e2);
         }
         System.out.println("\n");
+    }
+
+    public static void testerPersonnesAvecEcoles(){
+
     }
 }
