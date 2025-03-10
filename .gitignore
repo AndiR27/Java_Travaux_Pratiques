@@ -7,6 +7,7 @@
 *.dll
 *.so
 *.dylib
+/out/
 
 ### Ignorer les logs et fichiers temporaires ###
 *.log
