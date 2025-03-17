@@ -20,6 +20,9 @@ public class Menu {
         if (this.plats.size() < 5) {
             plats.add(plat);
         }
+        else{
+            System.out.println("Erreur : Il ne peut pas y avoir plus que 5 plats dans un menu." );
+        }
     }
 
     public boolean trouverPlat(Plat p){
