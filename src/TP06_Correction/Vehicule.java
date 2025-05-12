@@ -1,4 +1,4 @@
-package TP06;
+package TP06_Correction;
 
 import java.util.Objects;
 
@@ -32,13 +32,11 @@ public class Vehicule {
 
     @Override
     public String toString() {
-        return "Vehicule{" +
-                "marque='" + marque + '\'' +
+        return "marque='" + marque + '\'' +
                 ", modele='" + modele + '\'' +
                 ", annee=" + annee +
                 ", plaqueImmatriculation='" + plaqueImmatriculation + '\'' +
-                ", anneeRevision=" + anneeRevision +
-                '}';
+                ", anneeRevision=" + anneeRevision;
     }
 
     public String getplaqueImmatriculation() {

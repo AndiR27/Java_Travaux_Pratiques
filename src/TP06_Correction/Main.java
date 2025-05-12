@@ -1,4 +1,4 @@
-package TP06;
+package TP06_Correction;
 
 public class Main {
     public static void main(String[] args) {

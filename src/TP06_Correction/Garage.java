@@ -1,4 +1,4 @@
-package TP06;
+package TP06_Correction;
 
 import java.util.ArrayList;
 import java.util.HashMap;

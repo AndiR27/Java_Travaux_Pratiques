@@ -1,4 +1,4 @@
-package TP06;
+package TP06_Correction;
 
 public class Moto extends Vehicule {
     private int cylindre;
@@ -11,7 +11,6 @@ public class Moto extends Vehicule {
     @Override
     public String toString() {
         return super.getMarque() +
-                "cylindre=" + cylindre +
-                '}';
+                "cylindre=" + cylindre;
     }
 }

@@ -1,4 +1,4 @@
-package TP06;
+package TP06_Correction;
 
 public class Voiture extends Vehicule {
 
@@ -13,7 +13,6 @@ public class Voiture extends Vehicule {
     @Override
     public String toString() {
         return super.toString() +
-                "chevaux=" + chevaux +
-                '}';
+                "chevaux=" + chevaux;
     }
 }
