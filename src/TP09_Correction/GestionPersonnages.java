@@ -54,6 +54,7 @@ public class GestionPersonnages {
 
     /**
      * Charger les personnages à partir d'un tableau de string
+     *
      * @param personnages tableau de string contenant les personnages
      */
     public static void chargerPersonnages(String[] personnages) {
@@ -62,20 +63,18 @@ public class GestionPersonnages {
             String[] attributs = personnage.split(";");
             PersonnageJouable personnageJouable = null;
             if (attributs[0].equals("G")) {
-                 personnageJouable = new Guerrier(attributs[1], Integer.parseInt(attributs[2]), Integer.parseInt(attributs[3]), Integer.parseInt(attributs[4]), Integer.parseInt(attributs[5]), Integer.parseInt(attributs[6]), Integer.parseInt(attributs[7]));
+                personnageJouable = new Guerrier(attributs[1], Integer.parseInt(attributs[2]), Integer.parseInt(attributs[3]), Integer.parseInt(attributs[4]), Integer.parseInt(attributs[5]), Integer.parseInt(attributs[6]), Integer.parseInt(attributs[7]));
                 personnagesList.add(personnageJouable);
 
             } else if (attributs[0].equals("M")) {
-                 personnageJouable = new Mage(attributs[1], Integer.parseInt(attributs[2]), Integer.parseInt(attributs[3]), Integer.parseInt(attributs[4]), Integer.parseInt(attributs[5]), Integer.parseInt(attributs[6]), Integer.parseInt(attributs[7]));
+                personnageJouable = new Mage(attributs[1], Integer.parseInt(attributs[2]), Integer.parseInt(attributs[3]), Integer.parseInt(attributs[4]), Integer.parseInt(attributs[5]), Integer.parseInt(attributs[6]), Integer.parseInt(attributs[7]));
                 personnagesList.add(personnageJouable);
 
-            }
-            else if (attributs[0].equals("S")){
-                 personnageJouable = new Soigneur(attributs[1], Integer.parseInt(attributs[2]), Integer.parseInt(attributs[3]), Integer.parseInt(attributs[4]), Integer.parseInt(attributs[5]), Integer.parseInt(attributs[6]), Integer.parseInt(attributs[7]));
+            } else if (attributs[0].equals("S")) {
+                personnageJouable = new Soigneur(attributs[1], Integer.parseInt(attributs[2]), Integer.parseInt(attributs[3]), Integer.parseInt(attributs[4]), Integer.parseInt(attributs[5]), Integer.parseInt(attributs[6]), Integer.parseInt(attributs[7]));
                 personnagesList.add(personnageJouable);
 
-            }
-            else{
+            } else {
                 System.out.println("Le personnage " + attributs[1] + " n'est pas reconnu");
                 /**
                  * On aurait pu lever une exception, mais le reste du fichier ne serait pas traité

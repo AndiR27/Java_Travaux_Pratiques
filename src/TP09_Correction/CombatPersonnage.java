@@ -3,8 +3,8 @@ package TP09_Correction;
 import TP09_Correction.Domaine.*;
 
 public class CombatPersonnage {
-    private PersonnageJouable personnage1;
 
+    private PersonnageJouable personnage1;
     private PersonnageJouable personnage2;
 
     public CombatPersonnage(PersonnageJouable personnage1, PersonnageJouable personnage2) {
@@ -63,7 +63,6 @@ public class CombatPersonnage {
                 personnage.defendre();
                 break;
             case 2:
-
                 personnage.competenceSpeciale();
                 break;
         }
